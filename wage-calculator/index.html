@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+
+<meta content="#1D4F9F" name="theme-color"/>
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+
+<title>임금 계산기 (시급·월급 환산) · 계산방</title><meta content="시급을 월급으로, 월급을 시급으로 바꿔 보세요. 주휴수당 포함 월 환산 시간과 일급·주급·연봉까지 한 번에 계산합니다." name="description"/><link href="https://gyesanbang.com/wage-calculator/" rel="canonical"/><meta content="website" property="og:type"/><meta content="ko_KR" property="og:locale"/><meta content="계산방" property="og:site_name"/><meta content="임금 계산기 (시급·월급 환산) · 계산방" property="og:title"/><meta content="시급을 월급으로, 월급을 시급으로 바꿔 보세요. 주휴수당 포함 월 환산 시간과 일급·주급·연봉까지 한 번에 계산합니다." property="og:description"/><meta content="https://gyesanbang.com/wage-calculator/" property="og:url"/><meta content="https://gyesanbang.com/icon-512.png" property="og:image"/><link href="../favicon.svg" rel="icon" type="image/svg+xml"/><link href="../favicon.ico" rel="icon" sizes="any"/><link href="../apple-touch-icon.png" rel="apple-touch-icon"/><link href="../style.css" rel="stylesheet"/></head>
+<body class="noads" data-page="wage">
+<header><div class="wrap bar">
+<a aria-label="계산방 홈" class="logo" href="../"><svg aria-hidden="true" height="30" viewbox="0 0 64 64" width="30"><rect fill="#fff" height="64" rx="14" width="64"></rect><rect fill="#1D4F9F" height="12" rx="3" width="40" x="12" y="10"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="12" y="27"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="34" y="27"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="12" y="42"></rect><rect fill="#FFC53D" height="11" rx="3" width="18" x="34" y="42"></rect></svg>계산방</a>
+<nav aria-label="카테고리" id="topnav"><a class="on" data-c="0" href="../wage-calculator/">급여·노동</a><a data-c="1" href="../severance-pay/">퇴직·실업</a><a data-c="2" href="../insurance/">세금·보험</a><a data-c="3" href="../compound-interest/">투자·금융</a><a data-c="4" href="../military-service/">군복무</a><a data-c="5" href="../scan-converter/">문서 도구</a></nav>
+</div></header>
+
+<div class="shell ads"><aside aria-label="계산기 목록" id="side"><h4>급여·노동</h4><a class="on" data-id="wage" href="../wage-calculator/">임금 계산기 (시급·월급)</a><a data-id="holiday" href="../weekly-holiday-pay/">주휴수당 계산기</a><a data-id="ordinary" href="../ordinary-wage/">통상임금</a><a data-id="daily" href="../prorated-pay/">급여 일할 계산</a><a data-id="dismiss" href="../dismissal-pay/">해고수당</a><a data-id="late" href="../late-payment-interest/">체불 지연이자</a><h4>퇴직·실업</h4><a data-id="sev1" href="../severance-pay/">퇴직금(기본형)</a><a data-id="sev2" href="../severance-pay-detail/">퇴직금(상세형)</a><a data-id="dc" href="../retirement-pension-dc/">퇴직연금(DC형)</a><a data-id="sevtax" href="../severance-tax/">퇴직소득세</a><a data-id="ui" href="../unemployment-benefit/">실업급여</a><h4>세금·보험</h4><a data-id="ins4" href="../insurance/">4대보험료</a><h4>투자·금융</h4><a data-id="comp" href="../compound-interest/">복리 계산기</a><a data-id="rate" href="../interest-rate/">금리 계산기(예·적금)</a><a data-id="fx" href="../usd-cash-rate/">현금시세 (달러)</a><a data-id="gold" href="../gold-price/">금 환산 계산기</a><h4>군복무</h4><a data-id="army" href="../military-service/">군복무 계산기</a><h4>문서 도구</h4><a data-id="scan" href="../scan-converter/">스캔 변환</a><a data-id="imgconv" href="../image-converter/">이미지 변환</a><a data-id="pdfconv" href="../pdf-converter/">PDF 변환</a><a data-id="contract" href="../labor-contract/">근로계약서 자동작성</a></aside><main class="wrap">
+<!-- HOME -->
+
+<!-- WAGE -->
+<section id="wage">
+<p style="margin:24px 0 0;font-size:14px"><a href="../">← 전체 계산기</a></p>
+<h1 style="margin-top:12px">임금 계산기 (시급·월급)</h1>
+<p class="lead">시급으로 월급을 구하거나, 월급으로 시급을 거꾸로 계산해요. 주휴수당은 자동으로 반영됩니다.</p>
+<div class="panel">
+<div aria-label="계산 방향" class="seg" role="group">
+<button aria-pressed="true" id="m1" type="button">시급 → 월급</button>
+<button aria-pressed="false" id="m2" type="button">월급 → 시급</button>
+</div>
+<div class="grid">
+<label id="lblMain">시급 (원)<input id="main" inputmode="numeric" min="0" type="number" value="10320"/></label>
+<label>1일 근로시간<input id="hpd" inputmode="decimal" max="24" min="0" step="0.5" type="number" value="8"/></label>
+<label>주 근무일수<input id="dpw" inputmode="numeric" max="7" min="1" type="number" value="5"/></label>
+<label>기준 최저시급 (원)<input id="minw" inputmode="numeric" min="0" type="number" value="10320"/></label>
+</div>
+<label class="check"><input checked="" id="jh" type="checkbox"/> 주휴수당 포함 (주 15시간 이상일 때만 적용)</label>
+<div aria-live="polite" class="result">
+<div class="big" id="big">월급 2,152,457원</div>
+<dl class="rows" id="rows"><dt>주 소정근로시간</dt><dd>40.0시간</dd><dt>주휴시간</dt><dd>8.0시간</dd><dt>월 환산시간</dt><dd>208.6시간</dd><dt>주급(주휴 포함)</dt><dd>495,360원</dd><dt>연봉 환산(세전)</dt><dd>25,829,486원</dd><dt>적용 시급</dt><dd>10,320원</dd></dl>
+<div class="warn" hidden="" id="warn"></div>
+</div>
+</div>
+<div class="share"><button class="kk" type="button"><svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.8 5.3 4.6 6.7l-1 3.7c-.1.3.3.6.6.4l4.3-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.6 10-8S17.5 3 12 3z" fill="#191919"></path></svg>카카오톡 공유</button><button class="cp" type="button">링크 복사</button></div>
+<h2>월급·시급 변환 시 알아둘 점</h2><p>월급을 시급으로 바꿀 때는 주휴시간을 포함한 월 환산시간(주 40시간이면 209시간)으로 나눠야 해요. 174시간처럼 주휴를 뺀 시간으로 나누면 시급이 실제보다 높게 나와요. 시급 근로자는 주휴수당이 시급과 별도로 더해지는지, 이미 포함된 금액인지 계약서에서 확인하세요.</p>
+<h2>최저임금 위반 확인하기</h2><p>월급제라도 월 환산시간으로 나눈 시급이 최저시급 이상이어야 해요. 이 계산기는 적용 시급이 기준 최저시급보다 낮으면 알려줘요. 최저임금에 포함되는 수당의 범위는 법에 따로 정해져 있어서 성과급이나 일부 복리후생비는 산입 방식이 달라질 수 있으니, 애매하면 고용노동부 1350에 확인하세요.</p>
+<h2>근로계약서에서 확인할 것</h2><p>사용자는 임금의 구성항목, 계산방법, 지급방법을 서면으로 명시해 줘야 해요(근로기준법 제17조). 시급인지 월급인지, 수당이 포함된 금액인지, 지급일이 언제인지 계약서에 적혀 있는지 먼저 확인해 보세요.</p>
+<h2>계산 방법</h2>
+<p>월급 환산은 아래 순서로 계산해요.</p>
+<ol>
+<li>주 소정근로시간 = 1일 근로시간 × 주 근무일수</li>
+<li>주휴시간 = 주 소정근로시간 ÷ 40 × 8 (주 40시간 초과분은 40시간으로 제한)</li>
+<li>월 환산시간 = (주 소정근로시간 + 주휴시간) × 365 ÷ 7 ÷ 12</li>
+<li>월급 = 시급 × 월 환산시간</li>
+</ol>
+<p>주 40시간, 주 5일 근무라면 월 환산시간이 약 209시간이라서 월급 = 시급 × 209로 계산돼요.</p>
+<h3>계산 예시</h3>
+<div class="scroll"><table>
+<tbody><tr><th>시급</th><th>근무 조건</th><th>월 환산시간</th><th>월급(세전)</th></tr>
+<tr><td>10,320원</td><td>하루 8시간, 주 5일</td><td>약 209시간</td><td>약 2,156,880원</td></tr>
+<tr><td>10,320원</td><td>하루 4시간, 주 5일</td><td>약 104.5시간</td><td>약 1,078,440원</td></tr>
+</tbody></table></div>
+<h2>자주 묻는 질문</h2>
+<details><summary>주휴수당은 누구에게 주나요?</summary><p>1주일에 15시간 이상 일하고, 정해진 근무일을 모두 채운 근로자에게 유급 휴일 1일분의 임금을 줍니다. 아르바이트도 조건을 채우면 받을 수 있어요.</p></details>
+<details><summary>월급에 포함된 금액이 세후인가요?</summary><p>이 계산기의 결과는 4대보험과 세금을 떼기 전 금액이에요. 실수령액은 공제 후 금액이라서 더 적습니다.</p></details>
+<details><summary>수습 기간에는 최저시급을 다르게 적용하나요?</summary><p>일정 조건에서는 최저임금의 일부를 감액할 수 있는 경우가 있어요. 정확한 적용 조건은 고용노동부 안내나 관할 노동청에서 확인하세요.</p></details>
+<details><summary>최저시급은 매년 바뀌나요?</summary><p>네, 매년 새로 정해져 보통 1월부터 적용됩니다. 기준 최저시급 칸을 직접 수정해서 다른 해의 금액으로도 비교할 수 있어요.</p></details>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</main><div class="adcol"><div class="sb" id="sb"><h3>계산 방법</h3><p>월 환산시간 = (주 소정근로시간 + 주휴시간) × 365 ÷ 7 ÷ 12</p><h3>계산 예시</h3><p>시급 10,320원, 주 40시간이면 10,320 × 209시간 = 2,156,880원</p></div></div></div>
+<footer><div class="wrap">
+<p style="display:flex;gap:16px;flex-wrap:wrap;font-weight:500"><a href="../about/">운영자 소개</a><a href="../privacy/">개인정보처리방침</a><a href="../terms/">이용약관</a><a href="../contact/">문의하기</a></p>
+<p>본 사이트의 계산 결과는 참고용이며 법적 효력이 없습니다. 실제 임금과 수당은 근로계약, 취업규칙, 최신 법령에 따라 달라질 수 있어요. 중요한 사안은 고용노동부(1350)나 노무사 등 전문가와 확인하세요.</p>
+<p>기본 최저시급은 2026년 기준 10,320원이며, 최신 값은 고용노동부 공고에서 확인하세요.</p>
+</div></footer>
+
+
+<script defer="" src="../app.js"></script><script defer="" src="../promo.js"></script></body></html>

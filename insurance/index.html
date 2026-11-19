@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+
+<meta content="#1D4F9F" name="theme-color"/>
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+
+<title>4대보험료 계산기 · 계산방</title><meta content="월 급여로 국민연금, 건강보험, 장기요양보험, 고용보험의 근로자 부담분을 계산합니다." name="description"/><link href="https://gyesanbang.com/insurance/" rel="canonical"/><meta content="website" property="og:type"/><meta content="ko_KR" property="og:locale"/><meta content="계산방" property="og:site_name"/><meta content="4대보험료 계산기 · 계산방" property="og:title"/><meta content="월 급여로 국민연금, 건강보험, 장기요양보험, 고용보험의 근로자 부담분을 계산합니다." property="og:description"/><meta content="https://gyesanbang.com/insurance/" property="og:url"/><meta content="https://gyesanbang.com/icon-512.png" property="og:image"/><link href="../favicon.svg" rel="icon" type="image/svg+xml"/><link href="../favicon.ico" rel="icon" sizes="any"/><link href="../apple-touch-icon.png" rel="apple-touch-icon"/><link href="../style.css" rel="stylesheet"/></head>
+<body class="noads" data-page="ins4">
+<header><div class="wrap bar">
+<a aria-label="계산방 홈" class="logo" href="../"><svg aria-hidden="true" height="30" viewbox="0 0 64 64" width="30"><rect fill="#fff" height="64" rx="14" width="64"></rect><rect fill="#1D4F9F" height="12" rx="3" width="40" x="12" y="10"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="12" y="27"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="34" y="27"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="12" y="42"></rect><rect fill="#FFC53D" height="11" rx="3" width="18" x="34" y="42"></rect></svg>계산방</a>
+<nav aria-label="카테고리" id="topnav"><a data-c="0" href="../wage-calculator/">급여·노동</a><a data-c="1" href="../severance-pay/">퇴직·실업</a><a class="on" data-c="2" href="../insurance/">세금·보험</a><a data-c="3" href="../compound-interest/">투자·금융</a><a data-c="4" href="../military-service/">군복무</a><a data-c="5" href="../scan-converter/">문서 도구</a></nav>
+</div></header>
+
+<div class="shell ads"><aside aria-label="계산기 목록" id="side"><h4>급여·노동</h4><a data-id="wage" href="../wage-calculator/">임금 계산기 (시급·월급)</a><a data-id="holiday" href="../weekly-holiday-pay/">주휴수당 계산기</a><a data-id="ordinary" href="../ordinary-wage/">통상임금</a><a data-id="daily" href="../prorated-pay/">급여 일할 계산</a><a data-id="dismiss" href="../dismissal-pay/">해고수당</a><a data-id="late" href="../late-payment-interest/">체불 지연이자</a><h4>퇴직·실업</h4><a data-id="sev1" href="../severance-pay/">퇴직금(기본형)</a><a data-id="sev2" href="../severance-pay-detail/">퇴직금(상세형)</a><a data-id="dc" href="../retirement-pension-dc/">퇴직연금(DC형)</a><a data-id="sevtax" href="../severance-tax/">퇴직소득세</a><a data-id="ui" href="../unemployment-benefit/">실업급여</a><h4>세금·보험</h4><a class="on" data-id="ins4" href="../insurance/">4대보험료</a><h4>투자·금융</h4><a data-id="comp" href="../compound-interest/">복리 계산기</a><a data-id="rate" href="../interest-rate/">금리 계산기(예·적금)</a><a data-id="fx" href="../usd-cash-rate/">현금시세 (달러)</a><a data-id="gold" href="../gold-price/">금 환산 계산기</a><h4>군복무</h4><a data-id="army" href="../military-service/">군복무 계산기</a><h4>문서 도구</h4><a data-id="scan" href="../scan-converter/">스캔 변환</a><a data-id="imgconv" href="../image-converter/">이미지 변환</a><a data-id="pdfconv" href="../pdf-converter/">PDF 변환</a><a data-id="contract" href="../labor-contract/">근로계약서 자동작성</a></aside><main class="wrap">
+<!-- HOME -->
+
+<!-- WAGE -->
+
+
+
+
+
+
+
+<section id="gen"><p class="crumb">홈 &gt; 세금·보험</p><h1>4대보험료</h1><div class="tabs"><a class="on" href="../insurance/">4대보험료</a></div><div class="form"><div class="fr"><label for="f_pay">월 보수(비과세 제외)</label><div><input id="f_pay" inputmode="decimal" step="any" type="number" value="3000000"/><span class="u">원</span></div></div><div class="fr"><label for="f_np">국민연금 근로자 부담률</label><div><input id="f_np" inputmode="decimal" step="any" type="number" value="4.75"/><span class="u">%</span></div></div><div class="fr"><label for="f_hi">건강보험 근로자 부담률</label><div><input id="f_hi" inputmode="decimal" step="any" type="number" value="3.595"/><span class="u">%</span></div></div><div class="fr"><label for="f_lt">장기요양 (건강보험료 대비)</label><div><input id="f_lt" inputmode="decimal" step="any" type="number" value="13.14"/><span class="u">%</span></div></div><div class="fr"><label for="f_ei">고용보험 근로자 부담률</label><div><input id="f_ei" inputmode="decimal" step="any" type="number" value="0.9"/><span class="u">%</span></div></div></div><div class="btns"><button id="go" type="button">계산하기</button><button class="gray" id="rs" type="button">초기화</button></div><div aria-live="polite" class="result" id="gres"><div class="big">월 공제 합계 291,521원</div><dl class="rows"><dt>국민연금</dt><dd>142,500원</dd><dt>건강보험</dt><dd>107,850원</dd><dt>장기요양</dt><dd>14,171원</dd><dt>고용보험</dt><dd>27,000원</dd><dt>공제 후 금액(소득세 제외)</dt><dd>2,708,479원</dd></dl></div><div class="share"><button class="kk" type="button"><svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.8 5.3 4.6 6.7l-1 3.7c-.1.3.3.6.6.4l4.3-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.6 10-8S17.5 3 12 3z" fill="#191919"></path></svg>카카오톡 공유</button><button class="cp" type="button">링크 복사</button></div><p class="note">요율은 매년 바뀌어요. 기본값을 공단 안내와 대조해 수정하세요. 요율과 상·하한액은 매년 바뀌니 공단 안내와 대조해 수정하세요.</p><h2>4대보험이란</h2><p>국민연금, 건강보험(장기요양 포함), 고용보험, 산재보험을 묶어 부르는 말이에요. 이 가운데 산재보험은 사업주가 전액 부담하니 근로자 월급에서 공제되는 것은 앞의 세 가지예요.</p><h2>월급에서 얼마나 빠지나</h2><p>근로자 부담분은 보수에 요율을 곱해 계산해요. 국민연금과 건강보험은 사업주와 근로자가 절반씩 내고, 장기요양보험료는 건강보험료에 일정 비율을 곱해 역시 반씩 나눠요. 고용보험은 실업급여분 0.9%만 근로자가 내요.</p><h2>보수에서 빼는 항목</h2><p>4대보험료는 총급여가 아니라 비과세 소득을 뺀 금액을 기준으로 해요. 식대 월 20만 원까지는 비과세라서 보험료 기준에서 빠져요. 이 계산기의 월 보수 칸에는 비과세를 뺀 금액을 넣어 주세요.</p><h2>상한액과 하한액</h2><p>국민연금과 건강보험에는 기준소득월액·보수월액의 상한과 하한이 있어요. 보수가 상한을 넘으면 상한 금액으로, 하한에 못 미치면 하한 금액으로 계산해요. 국민연금은 1,000원 미만을 버려요. 이 계산기는 위 표의 상·하한을 반영했어요.</p><h2>매년 바뀌는 요율 확인</h2><p>건강보험은 매년 1월, 국민연금 상·하한은 매년 7월에 바뀌어요. 요율 칸에서 직접 고칠 수 있게 했으니, 국민연금공단·건강보험공단 안내와 비교해서 맞춰 주세요. 소득세와 지방소득세는 이 계산기에 포함되지 않아요.</p><h2>계산 기준</h2><div class="scroll"><table><tbody><tr><th>구분</th><th>설명</th></tr><tr><td>국민연금 (2026년 7월~2027년 6월)</td><td>보험료율 9.5%, 근로자와 사업주가 각 4.75%씩 부담해요. 기준소득월액은 상한 6,590,000원, 하한 410,000원이고 1,000원 미만은 버려요.</td></tr><tr><td>건강보험 (2026년)</td><td>보험료율 7.19%, 근로자와 사업주가 각 3.595%씩 부담해요. 보수월액은 상한 127,725,730원, 하한 280,383원이에요.</td></tr><tr><td>장기요양보험</td><td>건강보험료의 13.14% (보수월액 대비 0.9448%)이고 근로자와 사업주가 반씩 나눠요.</td></tr><tr><td>고용보험</td><td>근로자는 실업급여분 0.9%만 부담해요. 고용안정·직업능력개발 사업은 사업주가 부담합니다.</td></tr></tbody></table></div></section>
+
+
+
+
+</main><div class="adcol"><div class="sb" id="sb"><h3>계산 방법</h3><p>국민연금 = 기준소득월액 × 4.75%<br/>건강보험 = 보수월액 × 3.595%<br/>장기요양 = 건강보험료 × 13.14%<br/>고용보험 = 보수월액 × 0.9%</p><h3>계산 예시</h3><p>월 보수 300만 원 → 국민연금 142,500원, 건강보험 107,850원, 장기요양 약 14,172원, 고용보험 27,000원</p></div></div></div>
+<footer><div class="wrap">
+<p style="display:flex;gap:16px;flex-wrap:wrap;font-weight:500"><a href="../about/">운영자 소개</a><a href="../privacy/">개인정보처리방침</a><a href="../terms/">이용약관</a><a href="../contact/">문의하기</a></p>
+<p>본 사이트의 계산 결과는 참고용이며 법적 효력이 없습니다. 실제 임금과 수당은 근로계약, 취업규칙, 최신 법령에 따라 달라질 수 있어요. 중요한 사안은 고용노동부(1350)나 노무사 등 전문가와 확인하세요.</p>
+<p>기본 최저시급은 2026년 기준 10,320원이며, 최신 값은 고용노동부 공고에서 확인하세요.</p>
+</div></footer>
+
+
+<script defer="" src="../app.js"></script><script defer="" src="../promo.js"></script></body></html>

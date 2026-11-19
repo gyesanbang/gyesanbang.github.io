@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+
+<meta content="#1D4F9F" name="theme-color"/>
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+
+<title>달러 환율 계산기 (현금시세) · 계산방</title><meta content="달러 환율로 원화와 달러 금액을 서로 바꿔 계산합니다. 살 때와 팔 때 환율 차이도 입력해 볼 수 있어요." name="description"/><link href="https://gyesanbang.com/usd-cash-rate/" rel="canonical"/><meta content="website" property="og:type"/><meta content="ko_KR" property="og:locale"/><meta content="계산방" property="og:site_name"/><meta content="달러 환율 계산기 (현금시세) · 계산방" property="og:title"/><meta content="달러 환율로 원화와 달러 금액을 서로 바꿔 계산합니다. 살 때와 팔 때 환율 차이도 입력해 볼 수 있어요." property="og:description"/><meta content="https://gyesanbang.com/usd-cash-rate/" property="og:url"/><meta content="https://gyesanbang.com/icon-512.png" property="og:image"/><link href="../favicon.svg" rel="icon" type="image/svg+xml"/><link href="../favicon.ico" rel="icon" sizes="any"/><link href="../apple-touch-icon.png" rel="apple-touch-icon"/><link href="../style.css" rel="stylesheet"/></head>
+<body class="noads" data-page="fx">
+<header><div class="wrap bar">
+<a aria-label="계산방 홈" class="logo" href="../"><svg aria-hidden="true" height="30" viewbox="0 0 64 64" width="30"><rect fill="#fff" height="64" rx="14" width="64"></rect><rect fill="#1D4F9F" height="12" rx="3" width="40" x="12" y="10"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="12" y="27"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="34" y="27"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="12" y="42"></rect><rect fill="#FFC53D" height="11" rx="3" width="18" x="34" y="42"></rect></svg>계산방</a>
+<nav aria-label="카테고리" id="topnav"><a data-c="0" href="../wage-calculator/">급여·노동</a><a data-c="1" href="../severance-pay/">퇴직·실업</a><a data-c="2" href="../insurance/">세금·보험</a><a class="on" data-c="3" href="../compound-interest/">투자·금융</a><a data-c="4" href="../military-service/">군복무</a><a data-c="5" href="../scan-converter/">문서 도구</a></nav>
+</div></header>
+
+<div class="shell ads"><aside aria-label="계산기 목록" id="side"><h4>급여·노동</h4><a data-id="wage" href="../wage-calculator/">임금 계산기 (시급·월급)</a><a data-id="holiday" href="../weekly-holiday-pay/">주휴수당 계산기</a><a data-id="ordinary" href="../ordinary-wage/">통상임금</a><a data-id="daily" href="../prorated-pay/">급여 일할 계산</a><a data-id="dismiss" href="../dismissal-pay/">해고수당</a><a data-id="late" href="../late-payment-interest/">체불 지연이자</a><h4>퇴직·실업</h4><a data-id="sev1" href="../severance-pay/">퇴직금(기본형)</a><a data-id="sev2" href="../severance-pay-detail/">퇴직금(상세형)</a><a data-id="dc" href="../retirement-pension-dc/">퇴직연금(DC형)</a><a data-id="sevtax" href="../severance-tax/">퇴직소득세</a><a data-id="ui" href="../unemployment-benefit/">실업급여</a><h4>세금·보험</h4><a data-id="ins4" href="../insurance/">4대보험료</a><h4>투자·금융</h4><a data-id="comp" href="../compound-interest/">복리 계산기</a><a data-id="rate" href="../interest-rate/">금리 계산기(예·적금)</a><a class="on" data-id="fx" href="../usd-cash-rate/">현금시세 (달러)</a><a data-id="gold" href="../gold-price/">금 환산 계산기</a><h4>군복무</h4><a data-id="army" href="../military-service/">군복무 계산기</a><h4>문서 도구</h4><a data-id="scan" href="../scan-converter/">스캔 변환</a><a data-id="imgconv" href="../image-converter/">이미지 변환</a><a data-id="pdfconv" href="../pdf-converter/">PDF 변환</a><a data-id="contract" href="../labor-contract/">근로계약서 자동작성</a></aside><main class="wrap">
+<!-- HOME -->
+
+<!-- WAGE -->
+
+
+
+
+
+
+<section id="fx">
+<p class="crumb">홈 &gt; 투자·금융</p><h1>현금시세 (달러)</h1>
+<p class="lead">기준 환율에 환전 스프레드를 적용해 달러 현찰을 살 때와 팔 때의 예상 환율과 금액을 계산해요.</p>
+<div class="form" style="border-top:3px solid var(--bar)">
+<div class="fr"><label for="x_r">기준 환율 (원/달러)</label><div><input id="x_r" inputmode="decimal" step="any" type="number" value="1400"/><button id="xld" style="padding:8px 12px;border:1px solid var(--line);border-radius:4px;background:var(--soft);color:var(--ink);font:inherit;font-size:13px;cursor:pointer" type="button">최신값 불러오기</button></div></div>
+<div class="fr"><label for="x_a">금액 (달러)</label><div><input id="x_a" inputmode="decimal" step="any" type="number" value="1000"/><span class="u">달러</span></div></div>
+<div class="fr"><label for="x_b">살 때 스프레드</label><div><input id="x_b" inputmode="decimal" step="any" type="number" value="1.75"/><span class="u">%</span></div></div>
+<div class="fr"><label for="x_s">팔 때 스프레드</label><div><input id="x_s" inputmode="decimal" step="any" type="number" value="1.75"/><span class="u">%</span></div></div>
+</div>
+<p aria-live="polite" class="note" id="xst" style="margin:8px 0 0">환율을 불러오는 중...</p>
+<div aria-live="polite" class="result" id="xres"><div class="big">살 때 1,424.50원 / 팔 때 1,375.50원</div><dl class="rows"><dt>기준 환율</dt><dd>1,400.00원</dd><dt>살 때 환율 (1달러)</dt><dd>1,424.50원</dd><dt>팔 때 환율 (1달러)</dt><dd>1,375.50원</dd><dt>1,000달러를 살 때 필요한 원화</dt><dd>1,424,500원</dd><dt>1,000달러를 팔 때 받는 원화</dt><dd>1,375,500원</dd><dt>사고 바로 팔 때 차이(비용)</dt><dd>49,000원</dd></dl></div>
+<div class="share"><button class="kk" type="button"><svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.8 5.3 4.6 6.7l-1 3.7c-.1.3.3.6.6.4l4.3-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.6 10-8S17.5 3 12 3z" fill="#191919"></path></svg>카카오톡 공유</button><button class="cp" type="button">링크 복사</button></div>
+<h2>현찰 살 때와 팔 때가 다른 이유</h2><p>은행은 기준이 되는 환율(매매기준율)에 일정 비율을 더하거나 빼서 고객에게 팔고 삽니다. 달러를 살 때는 기준보다 비싸게, 팔 때는 기준보다 싸게 적용해요. 이 차이가 스프레드이고, 환전할 때 실질적인 비용이 돼요.</p>
+<h2>현찰이 송금보다 비싼 이유</h2><p>지폐를 직접 다루는 데는 보관과 운송 비용이 들어서 일반적으로 현찰 스프레드가 송금(전신환)보다 커요. 같은 은행에서도 환전하는 방식과 우대율에 따라 실제 적용 환율이 달라져요.</p>
+<h2>환전 비용 줄이는 요령</h2><p>은행 앱의 환율 우대 쿠폰, 주거래 고객 우대, 여행자용 외화 환전 서비스를 비교해 보세요. 큰 금액이라면 우대율 1%p 차이가 수만 원 차이로 이어져요. 이 계산기의 스프레드 칸에 은행이 알려준 비율을 넣으면 예상 금액을 미리 알 수 있어요.</p>
+<h2>이 시세는 참고용이에요</h2><p>불러오는 환율은 유럽중앙은행(ECB)이 공표하는 하루 한 번의 참고 환율이고, 한국의 은행이 고시하는 매매기준율과 차이가 날 수 있어요. 실시간 시세가 아니에요. 불러오지 못하면 기준 환율을 직접 입력해서 계산하세요. 스프레드의 기본값(1.75%)은 설명용 예시이고, 실제 환전할 때는 거래 은행의 고시 환율을 꼭 확인하세요.</p>
+</section>
+
+
+
+
+
+</main><div class="adcol"><div class="sb" id="sb"><h3>계산 방법</h3><p>살 때 환율 = 기준환율 × (1 + 살 때 스프레드)<br/>팔 때 환율 = 기준환율 × (1 − 팔 때 스프레드)</p><h3>계산 예시</h3><p>기준환율 1,400원, 스프레드 1.75% → 살 때 1,424.5원, 팔 때 1,375.5원</p></div></div></div>
+<footer><div class="wrap">
+<p style="display:flex;gap:16px;flex-wrap:wrap;font-weight:500"><a href="../about/">운영자 소개</a><a href="../privacy/">개인정보처리방침</a><a href="../terms/">이용약관</a><a href="../contact/">문의하기</a></p>
+<p>본 사이트의 계산 결과는 참고용이며 법적 효력이 없습니다. 실제 임금과 수당은 근로계약, 취업규칙, 최신 법령에 따라 달라질 수 있어요. 중요한 사안은 고용노동부(1350)나 노무사 등 전문가와 확인하세요.</p>
+<p>기본 최저시급은 2026년 기준 10,320원이며, 최신 값은 고용노동부 공고에서 확인하세요.</p>
+</div></footer>
+
+
+<script defer="" src="../app.js"></script><script defer="" src="../promo.js"></script></body></html>

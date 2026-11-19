@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+
+<meta content="#1D4F9F" name="theme-color"/>
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+
+<title>퇴직연금 DC형 계산기 · 계산방</title><meta content="연간 임금총액, 근속연수, 운용수익률을 가정해 DC형 퇴직연금 예상 적립액을 계산합니다." name="description"/><link href="https://gyesanbang.com/retirement-pension-dc/" rel="canonical"/><meta content="website" property="og:type"/><meta content="ko_KR" property="og:locale"/><meta content="계산방" property="og:site_name"/><meta content="퇴직연금 DC형 계산기 · 계산방" property="og:title"/><meta content="연간 임금총액, 근속연수, 운용수익률을 가정해 DC형 퇴직연금 예상 적립액을 계산합니다." property="og:description"/><meta content="https://gyesanbang.com/retirement-pension-dc/" property="og:url"/><meta content="https://gyesanbang.com/icon-512.png" property="og:image"/><link href="../favicon.svg" rel="icon" type="image/svg+xml"/><link href="../favicon.ico" rel="icon" sizes="any"/><link href="../apple-touch-icon.png" rel="apple-touch-icon"/><link href="../style.css" rel="stylesheet"/></head>
+<body class="noads" data-page="dc">
+<header><div class="wrap bar">
+<a aria-label="계산방 홈" class="logo" href="../"><svg aria-hidden="true" height="30" viewbox="0 0 64 64" width="30"><rect fill="#fff" height="64" rx="14" width="64"></rect><rect fill="#1D4F9F" height="12" rx="3" width="40" x="12" y="10"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="12" y="27"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="34" y="27"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="12" y="42"></rect><rect fill="#FFC53D" height="11" rx="3" width="18" x="34" y="42"></rect></svg>계산방</a>
+<nav aria-label="카테고리" id="topnav"><a data-c="0" href="../wage-calculator/">급여·노동</a><a class="on" data-c="1" href="../severance-pay/">퇴직·실업</a><a data-c="2" href="../insurance/">세금·보험</a><a data-c="3" href="../compound-interest/">투자·금융</a><a data-c="4" href="../military-service/">군복무</a><a data-c="5" href="../scan-converter/">문서 도구</a></nav>
+</div></header>
+
+<div class="shell ads"><aside aria-label="계산기 목록" id="side"><h4>급여·노동</h4><a data-id="wage" href="../wage-calculator/">임금 계산기 (시급·월급)</a><a data-id="holiday" href="../weekly-holiday-pay/">주휴수당 계산기</a><a data-id="ordinary" href="../ordinary-wage/">통상임금</a><a data-id="daily" href="../prorated-pay/">급여 일할 계산</a><a data-id="dismiss" href="../dismissal-pay/">해고수당</a><a data-id="late" href="../late-payment-interest/">체불 지연이자</a><h4>퇴직·실업</h4><a data-id="sev1" href="../severance-pay/">퇴직금(기본형)</a><a data-id="sev2" href="../severance-pay-detail/">퇴직금(상세형)</a><a class="on" data-id="dc" href="../retirement-pension-dc/">퇴직연금(DC형)</a><a data-id="sevtax" href="../severance-tax/">퇴직소득세</a><a data-id="ui" href="../unemployment-benefit/">실업급여</a><h4>세금·보험</h4><a data-id="ins4" href="../insurance/">4대보험료</a><h4>투자·금융</h4><a data-id="comp" href="../compound-interest/">복리 계산기</a><a data-id="rate" href="../interest-rate/">금리 계산기(예·적금)</a><a data-id="fx" href="../usd-cash-rate/">현금시세 (달러)</a><a data-id="gold" href="../gold-price/">금 환산 계산기</a><h4>군복무</h4><a data-id="army" href="../military-service/">군복무 계산기</a><h4>문서 도구</h4><a data-id="scan" href="../scan-converter/">스캔 변환</a><a data-id="imgconv" href="../image-converter/">이미지 변환</a><a data-id="pdfconv" href="../pdf-converter/">PDF 변환</a><a data-id="contract" href="../labor-contract/">근로계약서 자동작성</a></aside><main class="wrap">
+<!-- HOME -->
+
+<!-- WAGE -->
+
+
+
+
+
+
+
+<section id="gen"><p class="crumb">홈 &gt; 퇴직·실업</p><h1>퇴직연금(DC형)</h1><div class="tabs"><a href="../severance-pay/">퇴직금(기본형)</a><a href="../severance-pay-detail/">퇴직금(상세형)</a><a class="on" href="../retirement-pension-dc/">퇴직연금(DC형)</a><a href="../severance-tax/">퇴직소득세</a><a href="../unemployment-benefit/">실업급여</a></div><div class="form"><div class="fr"><label for="f_pay">연간 임금총액</label><div><input id="f_pay" inputmode="decimal" step="any" type="number" value="36000000"/><span class="u">원</span></div></div><div class="fr"><label for="f_yrs">근속연수</label><div><input id="f_yrs" inputmode="decimal" step="any" type="number" value="5"/><span class="u">년</span></div></div><div class="fr"><label for="f_r">연 운용수익률</label><div><input id="f_r" inputmode="decimal" step="any" type="number" value="3"/><span class="u">%</span></div></div></div><div class="btns"><button id="go" type="button">계산하기</button><button class="gray" id="rs" type="button">초기화</button></div><div aria-live="polite" class="result" id="gres"><div class="big">예상 적립금 15,927,407원</div><dl class="rows"><dt>연 부담금(연 임금총액의 1/12)</dt><dd>3,000,000원</dd><dt>총 납입액</dt><dd>15,000,000원</dd><dt>예상 운용수익</dt><dd>927,407원</dd></dl></div><div class="share"><button class="kk" type="button"><svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.8 5.3 4.6 6.7l-1 3.7c-.1.3.3.6.6.4l4.3-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.6 10-8S17.5 3 12 3z" fill="#191919"></path></svg>카카오톡 공유</button><button class="cp" type="button">링크 복사</button></div><p class="note">연 1회 연말 납입을 가정한 추정치예요. 실제 수익률은 운용 결과에 따라 달라집니다.</p><h2>DB형과 DC형의 차이</h2><p>DB형(확정급여형)은 퇴직할 때 평균임금 × 근속연수로 받을 금액이 정해져 있고 운용 책임은 회사에 있어요. DC형(확정기여형)은 회사가 매년 연 임금총액의 1/12 이상을 내 계좌에 넣어 주고, 운용 결과에 따라 받는 금액이 달라지며 운용 책임은 근로자에게 있어요.</p><h2>DC형 부담금 계산</h2><p>연간 부담금은 가입자의 연간 임금총액의 12분의 1 이상이에요(근로자퇴직급여 보장법 제20조). 연봉이 3,600만 원이면 해마다 300만 원이 입금되고, 연봉이 오르면 부담금도 따라 올라요. 이 계산기는 연봉이 일정하다고 가정해요.</p><h2>운용 수익률의 영향</h2><p>같은 부담금이라도 연 수익률이 3%인 경우와 0%인 경우는 5년 뒤 적립금이 크게 달라요. 수익률 칸에 여러 값을 넣어 차이를 확인해 보세요. 원금 손실 가능성이 있는 상품에서는 수익률이 마이너스가 될 수도 있어요.</p><h2>중도인출과 수령</h2><p>퇴직연금은 주택 구입, 6개월 이상 요양 같은 법으로 정한 사유가 있을 때만 중도인출할 수 있어요. 퇴직 후 받을 때는 일시금보다 연금으로 받는 쪽이 세금 부담이 줄 수 있으니 퇴직소득세 계산기와 함께 비교해 보세요.</p></section>
+
+
+
+
+</main><div class="adcol"><div class="sb" id="sb"><h3>계산 방법</h3><p>연 부담금 = 연 임금총액 ÷ 12<br/>적립금 = 부담금 × ((1+수익률)^년수 − 1) ÷ 수익률</p><h3>계산 예시</h3><p>연 3,600만 원 → 부담금 연 300만 원<br/>연 3%, 5년 → 약 15,927,000원</p></div></div></div>
+<footer><div class="wrap">
+<p style="display:flex;gap:16px;flex-wrap:wrap;font-weight:500"><a href="../about/">운영자 소개</a><a href="../privacy/">개인정보처리방침</a><a href="../terms/">이용약관</a><a href="../contact/">문의하기</a></p>
+<p>본 사이트의 계산 결과는 참고용이며 법적 효력이 없습니다. 실제 임금과 수당은 근로계약, 취업규칙, 최신 법령에 따라 달라질 수 있어요. 중요한 사안은 고용노동부(1350)나 노무사 등 전문가와 확인하세요.</p>
+<p>기본 최저시급은 2026년 기준 10,320원이며, 최신 값은 고용노동부 공고에서 확인하세요.</p>
+</div></footer>
+
+
+<script defer="" src="../app.js"></script><script defer="" src="../promo.js"></script></body></html>

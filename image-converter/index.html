@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+
+<meta content="#1D4F9F" name="theme-color"/>
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+
+<title>이미지 변환 · 크기 조절·형식 변환 · 계산방</title><meta content="이미지를 JPG, PNG, WebP로 바꾸고 크기와 용량을 줄여 보세요. 내 기기 안에서 처리됩니다." name="description"/><link href="https://gyesanbang.com/image-converter/" rel="canonical"/><meta content="website" property="og:type"/><meta content="ko_KR" property="og:locale"/><meta content="계산방" property="og:site_name"/><meta content="이미지 변환 · 크기 조절·형식 변환 · 계산방" property="og:title"/><meta content="이미지를 JPG, PNG, WebP로 바꾸고 크기와 용량을 줄여 보세요. 내 기기 안에서 처리됩니다." property="og:description"/><meta content="https://gyesanbang.com/image-converter/" property="og:url"/><meta content="https://gyesanbang.com/icon-512.png" property="og:image"/><link href="../favicon.svg" rel="icon" type="image/svg+xml"/><link href="../favicon.ico" rel="icon" sizes="any"/><link href="../apple-touch-icon.png" rel="apple-touch-icon"/><link href="../style.css" rel="stylesheet"/></head>
+<body class="noads" data-page="imgconv">
+<header><div class="wrap bar">
+<a aria-label="계산방 홈" class="logo" href="../"><svg aria-hidden="true" height="30" viewbox="0 0 64 64" width="30"><rect fill="#fff" height="64" rx="14" width="64"></rect><rect fill="#1D4F9F" height="12" rx="3" width="40" x="12" y="10"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="12" y="27"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="34" y="27"></rect><rect fill="#1D4F9F" height="11" rx="3" width="18" x="12" y="42"></rect><rect fill="#FFC53D" height="11" rx="3" width="18" x="34" y="42"></rect></svg>계산방</a>
+<nav aria-label="카테고리" id="topnav"><a data-c="0" href="../wage-calculator/">급여·노동</a><a data-c="1" href="../severance-pay/">퇴직·실업</a><a data-c="2" href="../insurance/">세금·보험</a><a data-c="3" href="../compound-interest/">투자·금융</a><a data-c="4" href="../military-service/">군복무</a><a class="on" data-c="5" href="../scan-converter/">문서 도구</a></nav>
+</div></header>
+
+<div class="shell ads"><aside aria-label="계산기 목록" id="side"><h4>급여·노동</h4><a data-id="wage" href="../wage-calculator/">임금 계산기 (시급·월급)</a><a data-id="holiday" href="../weekly-holiday-pay/">주휴수당 계산기</a><a data-id="ordinary" href="../ordinary-wage/">통상임금</a><a data-id="daily" href="../prorated-pay/">급여 일할 계산</a><a data-id="dismiss" href="../dismissal-pay/">해고수당</a><a data-id="late" href="../late-payment-interest/">체불 지연이자</a><h4>퇴직·실업</h4><a data-id="sev1" href="../severance-pay/">퇴직금(기본형)</a><a data-id="sev2" href="../severance-pay-detail/">퇴직금(상세형)</a><a data-id="dc" href="../retirement-pension-dc/">퇴직연금(DC형)</a><a data-id="sevtax" href="../severance-tax/">퇴직소득세</a><a data-id="ui" href="../unemployment-benefit/">실업급여</a><h4>세금·보험</h4><a data-id="ins4" href="../insurance/">4대보험료</a><h4>투자·금융</h4><a data-id="comp" href="../compound-interest/">복리 계산기</a><a data-id="rate" href="../interest-rate/">금리 계산기(예·적금)</a><a data-id="fx" href="../usd-cash-rate/">현금시세 (달러)</a><a data-id="gold" href="../gold-price/">금 환산 계산기</a><h4>군복무</h4><a data-id="army" href="../military-service/">군복무 계산기</a><h4>문서 도구</h4><a data-id="scan" href="../scan-converter/">스캔 변환</a><a class="on" data-id="imgconv" href="../image-converter/">이미지 변환</a><a data-id="pdfconv" href="../pdf-converter/">PDF 변환</a><a data-id="contract" href="../labor-contract/">근로계약서 자동작성</a></aside><main class="wrap">
+<!-- HOME -->
+
+<!-- WAGE -->
+
+
+
+<section id="imgconv">
+<p class="crumb">홈 &gt; 문서 도구</p><h1>이미지 변환</h1>
+<p class="lead">이미지 형식을 PNG, JPG, WEBP로 바꾸고 크기와 용량을 줄여요. 사진은 내 기기 안에서만 처리돼요.</p>
+<div class="form" style="border-top:3px solid var(--bar)">
+<div class="fr"><label for="if">이미지 파일</label><div><input accept="image/*" id="if" multiple="" type="file"/></div></div>
+<div class="fr"><label for="ifm">바꿀 형식</label><div><select id="ifm"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WEBP</option></select></div></div>
+<div class="fr"><label for="ifq">화질 (JPG·WEBP)</label><div><input id="ifq" max="100" min="30" type="range" value="85"/></div></div>
+<div class="fr"><label for="ifw">가로 크기 줄이기</label><div><select id="ifw"><option value="0">원본 크기</option><option value="1920">가로 1920px</option><option value="1280">가로 1280px</option><option value="800">가로 800px</option></select></div></div>
+</div>
+<div id="ilist" style="margin:16px 0"></div>
+<div class="share"><button class="kk" type="button"><svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.8 5.3 4.6 6.7l-1 3.7c-.1.3.3.6.6.4l4.3-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.6 10-8S17.5 3 12 3z" fill="#191919"></path></svg>카카오톡 공유</button><button class="cp" type="button">링크 복사</button></div>
+<h2>사용 방법</h2><p>이미지를 한 장 또는 여러 장 선택하세요. 바꿀 형식과 화질, 크기를 고르면 아래에 변환된 파일 목록과 용량이 나타나고, 파일마다 저장 버튼을 눌러 내려받을 수 있어요.</p>
+<h2>어떤 형식을 고를까요</h2><p>JPG는 사진에 알맞고 용량이 작아요. PNG는 글자나 로고처럼 선이 또렷한 이미지에 좋고 투명한 배경을 지킬 수 있어요. WEBP는 같은 화질에서 용량이 더 작지만 오래된 프로그램에서는 열리지 않을 수 있어요.</p>
+<h2>용량 줄이는 요령</h2><p>이메일이나 지원서 사이트에 올릴 때 용량 제한에 걸리면 JPG로 바꾸고 화질을 70~85로 낮추거나 가로 크기를 줄여 보세요. 눈으로 보기엔 차이가 크지 않으면서 용량은 크게 줄어드는 경우가 많아요.</p>
+<h2>알아두세요</h2><p>투명 배경 이미지를 JPG로 바꾸면 투명한 부분이 흰색으로 채워져요. 사진 속 위치 정보 같은 부가 정보는 변환하면 사라져요. WEBP를 지원하지 않는 기기에서는 PNG로 저장될 수 있고, 이때는 저장되는 파일 형식이 목록에 표시돼요.</p>
+</section>
+
+
+
+
+
+
+
+
+</main><div class="adcol"><div class="sb" id="sb"><h3>사용 방법</h3><p>이미지 선택, 형식 선택, 필요하면 가로 크기 줄이기, 저장 순서예요.</p></div></div></div>
+<footer><div class="wrap">
+<p style="display:flex;gap:16px;flex-wrap:wrap;font-weight:500"><a href="../about/">운영자 소개</a><a href="../privacy/">개인정보처리방침</a><a href="../terms/">이용약관</a><a href="../contact/">문의하기</a></p>
+<p>본 사이트의 계산 결과는 참고용이며 법적 효력이 없습니다. 실제 임금과 수당은 근로계약, 취업규칙, 최신 법령에 따라 달라질 수 있어요. 중요한 사안은 고용노동부(1350)나 노무사 등 전문가와 확인하세요.</p>
+<p>기본 최저시급은 2026년 기준 10,320원이며, 최신 값은 고용노동부 공고에서 확인하세요.</p>
+</div></footer>
+
+
+<script defer="" src="../app.js"></script><script defer="" src="../promo.js"></script></body></html>
