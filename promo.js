@@ -1,9 +1,9 @@
 /* 내 블로그 홍보 설정 — 이 파일만 고치면 모든 페이지에 반영돼요.
    url 이 비어 있으면 아무것도 표시되지 않아요. */
 window.PROMO = {
-  url: "",            // 블로그 주소 (예: "https://blog.naver.com/내아이디")
-  img: "",            // 배너 이미지 주소 (예: "promo/banner.png"). 비우면 글자 버튼으로 표시
-  text: "블로그 바로가기", // 이미지가 없을 때 / 이미지 설명(alt)
+  url: "https://onmoari.blogspot.com",            // 블로그 주소 (예: "https://blog.naver.com/내아이디")
+  img: "/promo/onmoari-banner.png",            // 배너 이미지 주소 (예: "promo/banner.png"). 비우면 글자 버튼으로 표시
+  text: "온모아리 블로그 바로가기", // 이미지가 없을 때 / 이미지 설명(alt)
   banner: true        // 페이지 본문 아래와 왼쪽 메뉴 아래에 배너 표시
 };
 (function(){
