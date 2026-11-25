@@ -165,6 +165,7 @@ if(wk<15){big.textContent="주휴수당 0원";w.hidden=false;w.textContent="주 
 if(!$("hFull").checked){big.textContent="이번 주 주휴수당 0원";w.hidden=false;w.textContent="정해진 근무일을 모두 채우지 않으면 그 주의 주휴수당은 발생하지 않아요. 개근하면 "+f(pay)+"을 받을 수 있어요."}else{big.textContent="주휴수당 "+f(pay)+" (주당)"}
 rows.innerHTML=base+"<dt>주휴시간</dt><dd>"+jh.toFixed(1)+"시간</dd><dt>주당 주휴수당 (개근 시)</dt><dd>"+f(pay)+"</dd><dt>월 환산 주휴수당</dt><dd>"+f(pay*365/7/12)+"</dd><dt>주휴수당 포함 주급</dt><dd>"+f(v*(wk+jh))+"</dd>"}
 ["hMain","hHpd","hDpw","hFull"].forEach(function(i){$(i).addEventListener("input",calcH)});
+(function(){var n=L.filter(function(x){return!x.soon}).length,e=document.getElementById("cnt");if(!e)return;e.textContent=n;if(navigator.webdriver||window.matchMedia("(prefers-reduced-motion:reduce)").matches)return;var t0=null;function st(t){if(!t0)t0=t;var r=Math.min(1,(t-t0)/900);e.textContent=Math.round(n*(1-Math.pow(1-r,3)));if(r<1)requestAnimationFrame(st)}requestAnimationFrame(st)})();
 route();
 })();
 

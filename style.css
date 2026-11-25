@@ -79,3 +79,45 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
 .qk a:hover{background:var(--soft);border-color:var(--brand)}.cp{background:var(--soft);color:var(--ink)}
 @media (max-width:760px){.shell{grid-template-columns:1fr;gap:0}aside{display:none}.fr{grid-template-columns:1fr}}
 @media (max-width:880px){header .bar{padding-left:20px;padding-right:20px}}
+
+/* ===== 블랙&화이트 테마 ===== */
+:root{--bg:#f4f4f4;--surface:#fff;--ink:#111;--sub:#666;--line:#e0e0e0;--brand:#111;--bar:#000;--soft:#f0f0f0;--hi:#ff4848;--warn:#d93025}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0a0a;--surface:#141414;--ink:#f2f2f2;--sub:#a0a0a0;--line:#2c2c2c;--brand:#fff;--bar:#2b2b2b;--soft:#1c1c1c;--hi:#ff4848;--warn:#ff8a80}}
+:root[data-theme="dark"]{--bg:#0a0a0a;--surface:#141414;--ink:#f2f2f2;--sub:#a0a0a0;--line:#2c2c2c;--brand:#fff;--bar:#2b2b2b;--soft:#1c1c1c;--hi:#ff4848;--warn:#ff8a80}
+header{background:var(--surface);border-bottom:1px solid var(--ink)}
+.topc{position:relative;display:block;overflow:hidden;background:#0a0a0a;height:140px;text-decoration:none;color:#000}
+body:has(#home:not([hidden])) .topc{height:250px}
+.topc .rowm{position:absolute;left:0;white-space:nowrap;font-size:52px;font-weight:900;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.2);line-height:1;will-change:transform}
+.topc .r1{top:-4px;animation:mL 70s linear infinite}.topc .r2{top:96px;animation:mR 90s linear infinite}.topc .r3{top:196px;animation:mL 110s linear infinite}
+body:not(:has(#home:not([hidden]))) .topc .r3{display:none}
+body:not(:has(#home:not([hidden]))) .topc .r2{top:84px}
+.topc .box{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;color:#000;padding:20px 60px;text-align:center;border:4px solid #000;box-shadow:10px 10px 0 #ff4848;z-index:2;white-space:nowrap;display:block;animation:pop .5s ease-out,sh 3s ease-in-out .5s infinite;transition:transform .2s}
+.topc .tt{display:block;font-size:74px;font-weight:900;letter-spacing:-.07em;line-height:1}
+.topc .sub{display:block;margin-top:8px;font-size:16px;font-weight:700;color:#444}
+.topc .tc{display:block;margin-top:8px;font-size:13px;font-weight:700;color:#ff4848;letter-spacing:.02em}
+.topc:hover .box{animation:none;box-shadow:16px 16px 0 #ff4848;transform:translate(-50%,-50%) translate(-4px,-4px)}
+body:not(:has(#home:not([hidden]))) .topc .box{padding:10px 40px;box-shadow:6px 6px 0 #ff4848}
+body:not(:has(#home:not([hidden]))) .topc .tt{font-size:44px}
+body:not(:has(#home:not([hidden]))) .topc .sub,body:not(:has(#home:not([hidden]))) .topc .tc{display:none}
+@keyframes mL{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes mR{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes pop{0%{transform:translate(-50%,-50%) scale(.92);opacity:0}100%{transform:translate(-50%,-50%) scale(1);opacity:1}}
+@keyframes sh{0%,100%{box-shadow:10px 10px 0 #ff4848}50%{box-shadow:15px 15px 0 #ff4848}}
+header .bar{display:block;padding:0;max-width:none}
+header nav{display:flex;justify-content:center;gap:0;flex-wrap:wrap}
+header nav a{position:relative;color:var(--ink);padding:15px 20px;font-size:15px;font-weight:700;border-radius:0;background:none}
+header nav a::after{content:"";position:absolute;left:20px;right:20px;bottom:6px;height:3px;background:#ff4848;transform:scaleX(0);transform-origin:left;transition:transform .25s}
+header nav a:hover,header nav a.on{background:none;color:var(--ink)}
+header nav a:hover::after,header nav a.on::after{transform:scaleX(1)}
+.tools a:hover{background:var(--ink);color:var(--surface)}
+.btns button{border-radius:2px}.btns .gray{background:#888}
+.result{border-left-color:#ff4848}.sb{border-top-color:#ff4848}.qk a{border-left-color:#ff4848}
+@media (max-width:700px){
+.topc{height:120px}body:has(#home:not([hidden])) .topc{height:210px}
+.topc .rowm{font-size:40px}.topc .r1{top:-2px}.topc .r2{top:72px}.topc .r3{top:146px}
+.topc .box{padding:14px 30px;box-shadow:7px 7px 0 #ff4848}.topc .tt{font-size:52px}.topc .sub{font-size:13px}.topc .tc{font-size:12px}
+body:not(:has(#home:not([hidden]))) .topc .r2{top:62px}
+body:not(:has(#home:not([hidden]))) .topc .tt{font-size:36px}
+header nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto}
+header nav a{padding:13px 14px;white-space:nowrap;font-size:14px}header nav a::after{left:14px;right:14px}}
+@media (prefers-reduced-motion:reduce){.topc .rowm,.topc .box{animation:none}header nav a::after{transition:none}}
